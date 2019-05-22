@@ -1,6 +1,10 @@
 {
-  "name": "expensify-app",
+  "name": "finance-app",
   "version": "1.0.0",
+  "engines": {
+    "node": "11.11.0",
+    "yarn": "1.15.2"
+  },
   "main": "index.js",
   "license": "MIT",
   "scripts": {
