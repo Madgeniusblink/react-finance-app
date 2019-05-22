@@ -8,7 +8,9 @@
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
-    "test": "jest --config=jest.config.json"
+    "test": "jest --config=jest.config.json",
+    "start": "node server/server.js",
+    "heroku-postbuild": "yarn run build:pord"
   },
   "dependencies": {
     "@babel/cli": "^7.0.0",
@@ -24,6 +26,7 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.0",
     "enzyme-to-json": "^3.3.5",
+    "express": "^4.17.0",
     "live-server": "^1.2.1",
     "moment": "^2.24.0",
     "node-sass": "^4.12.0",
