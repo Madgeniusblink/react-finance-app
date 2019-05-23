@@ -60,6 +60,7 @@ const mapStateToProps = (state) => ({
   filters: state.filters
 });
 
+// makes it easier to test
 const mapDispatchToProps = (dispatch) => ({
   setTextFilter: (text) => dispatch(setTextFilter(text)),
   sortByDate: () => dispatch(sortByDate()),
