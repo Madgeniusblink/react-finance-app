@@ -8,6 +8,6 @@ test('Should correctly render ExpensesSummary with 1 expense', () => {
 })
 
 test('Should correctly render ExpensesSummary with multiple expense', () => {
-    const wrapper = shallow(<ExpensesSummary expenseCount={1} expensesTotal={232345435}/>)
+    const wrapper = shallow(<ExpensesSummary expenseCount={5} expensesTotal={232345435}/>)
     expect(wrapper).toMatchSnapshot()
 })
