@@ -2,8 +2,8 @@
   "name": "finance-app",
   "version": "1.0.0",
   "engines": {
-    "node": "11.11.0",
-    "yarn": "1.15.2"
+    "node": "12.3.1",
+    "yarn": "1.16.0"
   },
   "main": "index.js",
   "license": "MIT",
@@ -11,7 +11,7 @@
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
-    "test": "jest --config=jest.config.json",
+    "test": "cross-env NODE_ENV=production jest --config=jest.config.json",
     "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod"
   },
@@ -28,6 +28,7 @@
     "css-loader": "^2.1.1",
     "express": "^4.17.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "firebase": "^6.0.4",
     "moment": "^2.24.0",
     "node-sass": "^4.12.0",
     "normalize.css": "^8.0.1",
@@ -41,6 +42,8 @@
     "react-redux": "^7.0.3",
     "react-router-dom": "^5.0.0",
     "redux": "^4.0.1",
+    "redux-mock-store": "^1.5.3",
+    "redux-thunk": "^2.3.0",
     "requirements": "^0.0.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
@@ -50,6 +53,8 @@
     "webpack-cli": "^3.3.1"
   },
   "devDependencies": {
+    "cross-env": "^5.2.0",
+    "dotenv": "^8.0.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.0",
     "enzyme-to-json": "^3.3.5",
