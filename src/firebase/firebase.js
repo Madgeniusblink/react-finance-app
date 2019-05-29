@@ -47,7 +47,7 @@ export { firebase, database as default  }
 //         })
 //     })
 
-// database.ref()
+// database.ref('expenses)
 //     .once('value')
 //     .then((snapshot) => {
 //         const expenses = []
