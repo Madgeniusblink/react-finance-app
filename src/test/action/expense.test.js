@@ -9,7 +9,7 @@ const createMockStore = configureMockStore([thunk])
 beforeEach((done) => {
     const expenseData = {}
     expenses.forEach(({ id, description, note, amount, createdAt }) => {
-        expenses[id] = { description, note, amount, createdAt }
+        expenseData[id] = { description, note, amount, createdAt }
     })
     database.ref('expenses').set(expenseData).then(() => done())
 })
