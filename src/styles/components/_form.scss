@@ -1,0 +1,15 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    >* {
+        margin-bottom: $m-size;
+    }
+    @media (max-width: $desktop-breakpoint) {
+        align-items: center;
+    }
+}
+
+.form__error {
+    margin: 0 0 $m-size 0;
+    font-style: italic;
+}

@@ -1,0 +1,45 @@
+.login-button {
+    background: $dark-blue;
+    color: $white;
+    display: inline-block;
+    border: none;
+    font-size: $font-size-large;
+    line-height: 1;
+    padding: $s-size;
+    border-radius: $s-size;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+.login-button:hover {
+    background-color: #4CAF50;
+    color: $white;
+}
+
+.button {
+    background: $blue;
+    border: none;
+    color: $white;
+    display: inline-block;
+    font-size: $font-size-large;
+    font-weight: 300;
+    line-height: 1;
+    padding: $s-size;
+    text-decoration: none;
+}
+
+.button--link {
+    background: none;
+}
+
+.button--link:hover {
+    color: red;
+}
+
+.button--secondary {
+    background: #8888;
+}
+.button--secondary:hover {
+    background: red;
+}
